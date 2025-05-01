@@ -23,4 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('ecommerce/', ecom_views.ecommerce_index_view),
     path('ecommerce/item/<item_id>', ecom_views.item_view),
+    path('ecommerce/customer/all', ecom_views.customer_all_view),
+    path('ecommerce/customer/user/<username>', ecom_views.view_username),
 ]
